@@ -1,0 +1,1702 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://adhd.com"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://adhd.com">
+    <Prefix name="" IRI="http://adhd.com#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="gufo" IRI="http://purl.org/nemo/gufo#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#ADHD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ADHDCriteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralTherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BirthSex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1g"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1h"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA1i"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2g"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2h"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionA2i"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriterionE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dextroamphetamine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HyperactivitySymptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InattentionSymptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicationTherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Methylphenidate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeurologicallyBasedCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreschoolAge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SchoolAge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teenager"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Category"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Kind"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Mixin"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Phase"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBirthSex"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeverity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGreaterThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLessThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prescribes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suffersFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDocument"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmissionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSatisfied"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A1a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A1b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A1c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A1d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A1e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A1f"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ADHD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adult"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BehavioralTherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BirthSex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1f"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1g"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1h"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA1i"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2f"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2g"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2h"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA2i"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionA_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionB_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionC_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionD_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriterionE_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dextroamphetamine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HyperactivitySymptom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InattentionSymptom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MedicalCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MedicalReport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MedicationTherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medicine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Methylphenidate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NeurologicallyBasedCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PreschoolAge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prescription"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Psychologist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SchoolAge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severity1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severity2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severity3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severity4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severity5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severity6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severity7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teenager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#suffersFrom"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ADHD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#NeurologicallyBasedCondition"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectInverseOf>
+                        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                    </ObjectInverseOf>
+                    <Class IRI="#CriterionA1"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectInverseOf>
+                        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                    </ObjectInverseOf>
+                    <Class IRI="#CriterionA2"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                </ObjectInverseOf>
+                <Class IRI="#CriterionB"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                </ObjectInverseOf>
+                <Class IRI="#CriterionC"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                </ObjectInverseOf>
+                <Class IRI="#CriterionD"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                </ObjectInverseOf>
+                <Class IRI="#CriterionE"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ADHDCriteria"/>
+        <ObjectUnionOf>
+            <Class IRI="#CriterionA"/>
+            <Class IRI="#CriterionB"/>
+            <Class IRI="#CriterionC"/>
+            <Class IRI="#CriterionD"/>
+            <Class IRI="#CriterionE"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BirthSex"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Female"/>
+            <NamedIndividual IRI="#Male"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CriterionA1"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CriterionA"/>
+            <ObjectMinCardinality cardinality="6">
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                </ObjectInverseOf>
+                <Class IRI="#HyperactivitySymptom"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CriterionA2"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CriterionA"/>
+            <ObjectMinCardinality cardinality="6">
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                </ObjectInverseOf>
+                <Class IRI="#InattentionSymptom"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HyperactivitySymptom"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSeverity"/>
+                <Class IRI="#Severity"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                <Class IRI="#CriterionA1"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InattentionSymptom"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSeverity"/>
+                <Class IRI="#Severity"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                <Class IRI="#CriterionA2"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Severity"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Severity1"/>
+            <NamedIndividual IRI="#Severity2"/>
+            <NamedIndividual IRI="#Severity3"/>
+            <NamedIndividual IRI="#Severity4"/>
+            <NamedIndividual IRI="#Severity5"/>
+            <NamedIndividual IRI="#Severity6"/>
+            <NamedIndividual IRI="#Severity7"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ADHDCriteria"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ADHDCriteria"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#ADHD"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ADHDCriteria"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#isSatisfied"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralTherapy"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralTherapy"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
+            <Class IRI="#Psychologist"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralTherapy"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Patient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BirthSex"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA"/>
+        <Class IRI="#ADHDCriteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1a"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1b"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1c"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1d"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1e"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1f"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1g"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1h"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA1i"/>
+        <Class IRI="#HyperactivitySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2a"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2b"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2c"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2d"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2e"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2f"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2g"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2h"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionA2i"/>
+        <Class IRI="#InattentionSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionB"/>
+        <Class IRI="#ADHDCriteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionC"/>
+        <Class IRI="#ADHDCriteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionD"/>
+        <Class IRI="#ADHDCriteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriterionE"/>
+        <Class IRI="#ADHDCriteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dextroamphetamine"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalCondition"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalReport"/>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalReport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#Doctor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalReport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#MedicalCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalReport"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#Patient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicationTherapy"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicationTherapy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
+            <Class IRI="#Medicine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicationTherapy"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Patient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Methylphenidate"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeurologicallyBasedCondition"/>
+        <Class IRI="#MedicalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#suffersFrom"/>
+            <Class IRI="#MedicalCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasBirthSex"/>
+            <Class IRI="#BirthSex"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasDateOfBirth"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreschoolAge"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prescription"/>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prescription"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prescribes"/>
+            <Class IRI="#MedicationTherapy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prescription"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#Doctor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prescription"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#Patient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Psychologist"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SchoolAge"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severity"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teenager"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Adult"/>
+        <Class IRI="#PreschoolAge"/>
+        <Class IRI="#SchoolAge"/>
+        <Class IRI="#Teenager"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionA"/>
+        <Class IRI="#CriterionB"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionA"/>
+        <Class IRI="#CriterionC"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionA"/>
+        <Class IRI="#CriterionD"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionA"/>
+        <Class IRI="#CriterionE"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionA1a"/>
+        <Class IRI="#CriterionA1b"/>
+        <Class IRI="#CriterionA1c"/>
+        <Class IRI="#CriterionA1d"/>
+        <Class IRI="#CriterionA1e"/>
+        <Class IRI="#CriterionA1f"/>
+        <Class IRI="#CriterionA1g"/>
+        <Class IRI="#CriterionA1h"/>
+        <Class IRI="#CriterionA1i"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionA2a"/>
+        <Class IRI="#CriterionA2b"/>
+        <Class IRI="#CriterionA2c"/>
+        <Class IRI="#CriterionA2d"/>
+        <Class IRI="#CriterionA2e"/>
+        <Class IRI="#CriterionA2f"/>
+        <Class IRI="#CriterionA2g"/>
+        <Class IRI="#CriterionA2h"/>
+        <Class IRI="#CriterionA2i"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionB"/>
+        <Class IRI="#CriterionC"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionB"/>
+        <Class IRI="#CriterionD"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionB"/>
+        <Class IRI="#CriterionE"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionC"/>
+        <Class IRI="#CriterionD"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionC"/>
+        <Class IRI="#CriterionE"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriterionD"/>
+        <Class IRI="#CriterionE"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dextroamphetamine"/>
+        <Class IRI="#Methylphenidate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#Patient"/>
+        <Class IRI="#Psychologist"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HyperactivitySymptom"/>
+        <Class IRI="#InattentionSymptom"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#CriterionA1a"/>
+        <NamedIndividual IRI="#A1a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionA1b"/>
+        <NamedIndividual IRI="#A1b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionA1c"/>
+        <NamedIndividual IRI="#A1c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionA1d"/>
+        <NamedIndividual IRI="#A1d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionA1e"/>
+        <NamedIndividual IRI="#A1e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionA1f"/>
+        <NamedIndividual IRI="#A1f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#ADHD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#Adult"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#BehavioralTherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#BirthSex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NeurologicallyBasedCondition"/>
+        <NamedIndividual IRI="#Condition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1g"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1h"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA1i"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2g"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2h"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionA2i"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionA"/>
+        <NamedIndividual IRI="#CriterionA_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionB"/>
+        <NamedIndividual IRI="#CriterionB_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionC"/>
+        <NamedIndividual IRI="#CriterionC_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionD"/>
+        <NamedIndividual IRI="#CriterionD_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#CriterionE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CriterionE"/>
+        <NamedIndividual IRI="#CriterionE_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Dextroamphetamine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Role"/>
+        <NamedIndividual IRI="#Doctor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BirthSex"/>
+        <NamedIndividual IRI="#Female"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#HyperactivitySymptom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#InattentionSymptom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BirthSex"/>
+        <NamedIndividual IRI="#Male"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Mixin"/>
+        <NamedIndividual IRI="#MedicalCondition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#MedicalReport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#MedicationTherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Medicine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Methylphenidate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#NeurologicallyBasedCondition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Role"/>
+        <NamedIndividual IRI="#Patient"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Person"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#PreschoolAge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Prescription"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Role"/>
+        <NamedIndividual IRI="#Psychologist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#SchoolAge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Severity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#Severity1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#Severity2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#Severity3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#Severity4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#Severity5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#Severity6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#Severity7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#Teenager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual IRI="#suffersFrom"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#A1a"/>
+        <NamedIndividual IRI="#CriterionA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#A1b"/>
+        <NamedIndividual IRI="#CriterionA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#A1c"/>
+        <NamedIndividual IRI="#CriterionA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#A1d"/>
+        <NamedIndividual IRI="#CriterionA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#A1e"/>
+        <NamedIndividual IRI="#CriterionA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#A1f"/>
+        <NamedIndividual IRI="#CriterionA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#CriterionA_1"/>
+        <NamedIndividual IRI="#Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#CriterionB_1"/>
+        <NamedIndividual IRI="#Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#CriterionC_1"/>
+        <NamedIndividual IRI="#Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#CriterionD_1"/>
+        <NamedIndividual IRI="#Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#CriterionE_1"/>
+        <NamedIndividual IRI="#Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLessThan"/>
+        <NamedIndividual IRI="#Severity1"/>
+        <NamedIndividual IRI="#Severity2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLessThan"/>
+        <NamedIndividual IRI="#Severity2"/>
+        <NamedIndividual IRI="#Severity3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLessThan"/>
+        <NamedIndividual IRI="#Severity3"/>
+        <NamedIndividual IRI="#Severity4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLessThan"/>
+        <NamedIndividual IRI="#Severity4"/>
+        <NamedIndividual IRI="#Severity5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLessThan"/>
+        <NamedIndividual IRI="#Severity5"/>
+        <NamedIndividual IRI="#Severity6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLessThan"/>
+        <NamedIndividual IRI="#Severity6"/>
+        <NamedIndividual IRI="#Severity7"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Severity1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Severity2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Severity3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Severity4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Severity5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Severity6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Severity7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isGreaterThan"/>
+        <ObjectProperty IRI="#isLessThan"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBirthSex"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSeverity"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isGreaterThan"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isLessThan"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBirthSex"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGreaterThan"/>
+        <Class IRI="#Severity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLessThan"/>
+        <Class IRI="#Severity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#prescribes"/>
+        <Class IRI="#Prescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suffersFrom"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBirthSex"/>
+        <Class IRI="#BirthSex"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeverity"/>
+        <Class IRI="#Severity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGreaterThan"/>
+        <Class IRI="#Severity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLessThan"/>
+        <Class IRI="#Severity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#prescribes"/>
+        <Class IRI="#MedicationTherapy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#suffersFrom"/>
+        <Class IRI="#MedicalCondition"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDateOfBirth"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasEmissionDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isSatisfied"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDateOfBirth"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDocument"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEmissionDate"/>
+        <Class IRI="#MedicalReport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Severity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isSatisfied"/>
+        <ObjectUnionOf>
+            <Class IRI="#CriterionA"/>
+            <Class IRI="#CriterionB"/>
+            <Class IRI="#CriterionC"/>
+            <Class IRI="#CriterionD"/>
+            <Class IRI="#CriterionE"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDateOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDocument"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEmissionDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isSatisfied"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ADHD</IRI>
+        <Literal xml:lang="en">ADHD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Adult</IRI>
+        <Literal xml:lang="en">Adult</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralTherapy</IRI>
+        <Literal xml:lang="en">Behavioral Therapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BirthSex</IRI>
+        <Literal xml:lang="en">Birth Sex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA</IRI>
+        <Literal xml:lang="en">Criterion A</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1</IRI>
+        <Literal xml:lang="en">Criterion A1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1a</IRI>
+        <Literal xml:lang="en">Criterion A1a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1b</IRI>
+        <Literal xml:lang="en">Criterion A1b</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1c</IRI>
+        <Literal xml:lang="en">Criterion A1c</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1d</IRI>
+        <Literal xml:lang="en">Criterion A1d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1e</IRI>
+        <Literal xml:lang="en">Criterion A1e</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1f</IRI>
+        <Literal xml:lang="en">Criterion A1f</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1g</IRI>
+        <Literal xml:lang="en">Criterion A1g</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1h</IRI>
+        <Literal xml:lang="en">Criterion A1h</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA1i</IRI>
+        <Literal xml:lang="en">Criterion A1i</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2</IRI>
+        <Literal xml:lang="en">Criterion A2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2a</IRI>
+        <Literal xml:lang="en">Criterion A2a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2b</IRI>
+        <Literal xml:lang="en">Criterion A2b</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2c</IRI>
+        <Literal xml:lang="en">Criterion A2c</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2d</IRI>
+        <Literal xml:lang="en">Criterion A2d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2e</IRI>
+        <Literal xml:lang="en">Criterion A2e</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2f</IRI>
+        <Literal xml:lang="en">Criterion A2f</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2g</IRI>
+        <Literal xml:lang="en">Criterion A2g</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2h</IRI>
+        <Literal xml:lang="en">Criterion A2h</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionA2i</IRI>
+        <Literal xml:lang="en">Criterion A2i</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionB</IRI>
+        <Literal xml:lang="en">Criterion B</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionC</IRI>
+        <Literal xml:lang="en">Criterion C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionD</IRI>
+        <Literal xml:lang="en">Criterion D</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriterionE</IRI>
+        <Literal xml:lang="en">Criterion E</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dextroamphetamine</IRI>
+        <Literal xml:lang="en">Dextroamphetamine </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Doctor</IRI>
+        <Literal xml:lang="en">Doctor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HyperactivitySymptom</IRI>
+        <Literal xml:lang="en">Hyperactivity Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InattentionSymptom</IRI>
+        <Literal xml:lang="en">Inattention Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MedicalCondition</IRI>
+        <Literal xml:lang="en">Medical Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MedicalReport</IRI>
+        <Literal xml:lang="en">Medical Report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MedicationTherapy</IRI>
+        <Literal xml:lang="en">Medication Therapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Medicine</IRI>
+        <Literal xml:lang="en">Medicine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Methylphenidate</IRI>
+        <Literal xml:lang="en">Methylphenidate </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NeurologicallyBasedCondition</IRI>
+        <Literal xml:lang="en">Neurologically Based Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Patient</IRI>
+        <Literal xml:lang="en">Patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PreschoolAge</IRI>
+        <Literal xml:lang="en">Preschool Age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Prescription</IRI>
+        <Literal xml:lang="en">Prescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Psychologist</IRI>
+        <Literal xml:lang="en">Psychologist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SchoolAge</IRI>
+        <Literal xml:lang="en">School Age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Severity</IRI>
+        <Literal xml:lang="en">Severity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Teenager</IRI>
+        <Literal xml:lang="en">Teenager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#suffersFrom</IRI>
+        <Literal xml:lang="en">/suffers-from</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
